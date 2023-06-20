@@ -1,0 +1,60 @@
+{
+  "name": "repropathways",
+  "version": "1.0.0",
+  "description": "a dynamic resource hub aimed at inspiring and supporting diverse minds in pursuing careers in reproductive health and sciences",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "export": "next export",
+    "start": "next start",
+    "test": "jest",
+    "lint": "eslint src",
+    "prepare": "husky install",
+    "seed": "node src/utils/seed-database.mjs data/seed.json --emulate"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Evelyn-Kriter/ReproPathways.git"
+  },
+  "author": "Evelyn Kriter <ekriter@middlebury.edu>",
+  "contributors": [],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Evelyn-Kriter/ReproPathways/issues"
+  },
+  "homepage": "https://github.com/Evelyn-Kriter/ReproPathways#readme",
+  "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@mui/icons-material": "^5.10.16",
+    "@mui/material": "^5.10.17",
+    "bootstrap": "^5.2.3",
+    "firebase": "^9.14.0",
+    "kill-port": "^2.0.1",
+    "next": "12.3.1",
+    "react": "18.2.0",
+    "react-bootstrap": "^2.6.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "eslint": "^8.25.0",
+    "eslint-config-next": "12.3.1",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "husky": "^8.0.1",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^29.1.2",
+    "jest-environment-jsdom": "^29.1.2",
+    "lint-staged": "^13.0.3",
+    "next-router-mock": "^0.7.4",
+    "prettier": "^2.7.1"
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix",
+    "*.{js,css,md,json,jsx}": "prettier --write"
+  }
+}
