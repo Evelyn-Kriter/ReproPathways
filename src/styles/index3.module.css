@@ -1,0 +1,49 @@
+/* ABOUT US PAGE STYLES */
+
+.body {
+    font-family: "Quicksand", sans-serif;
+}
+
+.h2About {
+    font-size: 3.0rem;
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+    color: rgba(140,135,191);
+    font-weight: bold;
+    padding: 1%;
+}
+
+.introsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.introsBox {
+    margin: 2.5%;
+    border-style: double solid;
+    border-radius: 25px;
+    width: 500px;
+    height: auto;
+    border: 4px solid #fbb15d;
+    box-shadow: 1px 2px 3px 4px rgba(20, 20, 20, 0.079);
+}
+
+.profileContainer {
+    display: flex;
+    margin: 4%;
+}
+
+.picContainer {
+    width: 40%;
+}
+
+.introHeadingContainer {
+    margin: 4%;
+}
+
+.textContainer {
+    display: inherit;
+    font-family: "Quicksand", sans-serif;
+    margin: 5%;
+}

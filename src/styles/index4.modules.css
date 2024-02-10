@@ -1,0 +1,7 @@
+/* EXPLORE STYLES */
+
+.jobsContainer { /*scrolling functionality similar to Netflix */
+    display: flex;
+    justify-content: space-between;
+    overflow:scroll;
+}

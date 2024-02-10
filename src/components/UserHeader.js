@@ -1,3 +1,11 @@
+import * as React from "react";
+import AppBar from "@mui/material/AppBar";
+import Box from "@mui/material/Box";
+import Toolbar from "@mui/material/Toolbar";
+import Typography from "@mui/material/Typography";
+import Button from "@mui/material/Button";
+
+/*
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -18,12 +26,14 @@ import { useUser } from "../contexts/UserContext";
 import { useState } from "react";
 import { getAuth } from "firebase/auth";
 //import PropTypes from "prop-types";
+*/
 
 /*/
 This component renders the header for each ReproHub page
 /*/
 
 export default function UserHeader({}) {
+  /*
   const pages = ["Home", "Explore", "Internships", "About"];
   const settings = ["Settings"];
 
@@ -44,7 +54,6 @@ export default function UserHeader({}) {
   };
 
   const closeUserMenu = () => {
-    //console.log("Closed settings!");
     setAnchorElUser();
     // logOut();
   };
@@ -54,9 +63,53 @@ export default function UserHeader({}) {
     auth.signOut();
     setAnchorElUser();
   };
+  */
 
   return (
-    <AppBar position="absolute" style={{ background: "#1b3a5d" }}>
+    <Box sx={{ flexGrow: 1 }}>
+      <AppBar
+        position="static"
+        style={{ background: "#093a7d", height: "50px" }}
+      >
+        <Toolbar>
+          {/*           <IconButton
+            size="large"
+            edge="start"
+            color="inherit"
+            aria-label="menu"
+            sx={{ mr: 2 }}
+          >
+          <MenuIcon />
+          </IconButton> */}
+          <Typography
+            variant="h12"
+            color="inherit"
+            component="div"
+            sx={{ flexGrow: 1 }}
+          >
+            Login
+          </Typography>
+          <Button variant="h12" href="#contact">
+            Contact
+          </Button>
+          <Button
+            variant="h12"
+            href="https://www.instagram.com/repropathways.ig/"
+          >
+            <i className="fa fa-instagram" />
+          </Button>
+          <Button variant="h12" href="mailto:info@repropathways.org">
+            <i className="fa fa-envelope-o" />
+          </Button>
+        </Toolbar>
+      </AppBar>
+    </Box>
+  );
+}
+
+/*
+  return (
+    <AppBar position="fixed" style={{ background: "#093a7d", height: "60px" }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <HealthAndSafetySharpIcon
@@ -149,6 +202,7 @@ export default function UserHeader({}) {
     </AppBar>
   );
 }
+*/
 
 UserHeader.propTypes = {
   //isStudent: PropTypes.bool.isRequired,

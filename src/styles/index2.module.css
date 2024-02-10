@@ -1,0 +1,109 @@
+/* SPOTLIGHT PAGE STYLES */
+
+
+.html {
+  scroll-behavior: smooth;
+}
+
+.body {
+  font-family: "Quicksand", sans-serif;
+}
+
+.WelcomeGraphic2Container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1250px;
+}
+
+.container {
+  /*min-height: 108vh;*/
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title1 {
+  /*color: rgb(15, 11, 13);*/
+  font-family: "Quicksand", sans-serif;
+  font-size: 2.5em;
+  text-align: center;
+}
+
+.title2 {
+  color: rgb(255, 255, 255);
+  font-family: "Quicksand", sans-serif;
+  font-size: 2.5em;
+  text-align: center;
+}
+
+.text1 {
+  /*color: rgb(15, 11, 13);*/
+  color: rgb(0, 0, 0);
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.8em;
+  text-align: center;
+}
+
+.text2 {
+  /*color: rgb(15, 11, 13);*/
+  color: rgb(255, 255, 255);
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.8em;
+  text-align: center;
+}
+
+.box1 {
+  margin-top: 6%;
+  background-color: #feb6c1;
+  min-height: 10vh;
+  /*padding: 0 1.0rem;*/
+  padding: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.box2 {
+  margin-top: 2.5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  background-color: #1b3a5d;
+  min-height: 10vh;
+  /*padding: 0 1.0rem;*/
+  padding: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.box3 {
+  margin-top: 2.5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  background-color: #fefaf6;
+  min-height: 10vh;
+  /*padding: 0 1.0rem;*/
+  padding: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.footer {
+  margin-top: 1%;
+  width: 90%;
+  padding: 5%;
+  display: flex;
+  flex-direction: row;
+  background-color: #1b3a5d;
+  justify-content: center;
+}
+
+.footertext {
+  color: rgb(255, 255, 255);
+  text-align: center;
+}

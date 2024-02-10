@@ -1,54 +1,740 @@
-.container {
-  /*min-height: 108vh;*/
-  margin-top: 70px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #fefaf6;
+/* KEY FOR VALUES
+    Ctrl F to search for numeric values, which will be the following
+
+    --nav-link-color: rgba(233, 242, 251, 1);
+    --nav-link-hover-color: rgb(190, 217, 243);
+    --title-span-color: rgb(183, 61, 150);
+
+    --hero-background: rgb(255, 255, 255);
+    --hero-background-gradient: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(17, 57, 96, 1) 100%);
+
+    --font-small: 0.5em;
+    --font-medium: 1em;
+    --font-medium-large: 1.25em;
+    --font-large: 1.5rem;
+    --font-x-large: 2rem;
+    --font-2x-large: 3rem;
+    --font-3x-large: 3.5rem;
+    --font-4x-large: 4rem;
+    --font-5x-large: 4.5rem;
+    --font-6x-large: 5rem;
+    --font-7x-large: 5.5rem;
+
+    -text-color: rgba(7, 26, 44, 1);
+
+    --transition-slow: 0.6s;
+    --transition-medium: 0.4s;
+    --transition-fast: 0.2s;
+    --transition-fastest: 0.1s;
+*/
+
+/*Large Desktop*/
+/*General CSS*/
+.html {
+    scroll-behavior: smooth;
+}
+
+.body {
+    font-family: "Quicksand", sans-serif;
+}
+
+/* NAVIGATION */
+.header2 {
+    overflow: hidden;
+    background-color: #ffffff;
+  }
   
-}
-.title {
-  /*color: rgb(15, 11, 13);*/
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 2.5em;
-  text-align: center;
-}
-
-.text {
-  /*color: rgb(15, 11, 13);*/
-  color: rgb(0, 0, 0);
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 1.8em;
-  text-align: center;
+.header2Container {
+    margin: 0 auto;
+    width: 70%;
+    height: 100%;
+    display: inline;
 }
 
-.content p {
-  margin: 0px;
+.header2ImageContainer {
+    float: left;
+    text-align: left;
+    padding-left: 10%;
+    padding-top: 5px;
+}
+  
+.header2Image { /* Style the image*/
+    max-height: 65px;
+    width: 50px;
+}
+  
+.header2MobileButton {
+    display: none;
 }
 
-.round1 {
-  margin-top: 2.5%;
-  background-color: #feb6c1;
-  min-height: 10vh;
-  /*padding: 0 1.0rem;*/
-  padding: 10%;
-  margin-left: 5%;
-  margin-right: 5%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.header2Right { /* Float the link section to the right */
+    display: block;
+    padding-right: 2%;
+}
+  
+.header2RightLinks { /* Style the header links */
+    margin-top: 1%;
+    float: right;
+    color: black;
+    text-align: right;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px; 
 }
 
-.round2 {
-  margin-top: 2.5%;
-  background-color: #1b3a5d;
-  min-height: 10vh;
-  /*padding: 0 1.0rem;*/
-  padding: 10%;
-  margin-left: 5%;
-  margin-right: 5%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.header2RightLinksActive { /* Style the active header link */
+    margin-top: 1%;
+    float: right;
+    color: black;
+    text-align: right;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px; 
+    background-color:#b6e1da
+}
+  
+.header2 a:hover { /* Change the background color on mouse-over */
+    background-color: #ddd;
+    color: black;
+}
+  
+.header2 a.active { /* Style the active/current link*/
+    background-color: #b5e0d9;
+    color: rgb(0, 0, 0);
+}
+
+/* WELCOME GRAPHIC */
+.WelcomeGraphic {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1145px;
+}
+/* MISSION BANNER */
+.missionBannerContainer {
+    width: 500px;
+    margin-bottom: 1%;
+    margin-left: 7%;
+}
+
+.h3Mission {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 1%;
+    padding-bottom: 5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* ARROW */
+.arrowContainer {
+    display: flex;
+    justify-content: center;
+    padding-top: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 2%;
+}
+
+.arrowButton {
+    text-decoration: none;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white; 
+    border: 4px solid #f69478;
+    color: #f69478;
+    padding-left: 30%;
+    padding-right: 30%;
+    text-align: center;
+    /*font-size: 3.5rem;*/
+    font-size: 3.5vw;
+}
+
+.arrowButton:hover {
+    background-color: #f69478;
+    color: white;
+    padding-left: 32%;
+    padding-right: 32%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+}
+
+.arrowButtonText {
+    font-family: "Quicksand", sans-serif;
+    /* font-size: 3.5rem; */
+    font-size: 3.5vw;
+    font-weight: bold;
+}
+
+/* REPROPATHWAYS ROADMAP */
+.RoadmapImage {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 980px;
+}
+
+
+/* ABOUT/VISION */
+.h2AboutVision {
+    font-size: 3.5vw;
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+    color: rgba(140,135,191);
+    font-weight: bold;
+}
+
+.aboutVisionContainer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.submitContainer {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 70px;
+    padding-top: 20px;
+}
+
+.aboutContainer {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    padding-right: 10px;
+}
+
+.visionContainer {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 10px;
+    height: auto;
+}
+
+.aboutVisionText {
+    text-align: center;
+    font-size: 1.25vw;
+}
+
+.AboutVisionSubmit {
+    margin: 9px;
+    background-color: #8c87bf;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.AboutVisionSubmit:hover {
+    background-color: #A39DDF;
+}
+
+
+/* BANNERS */
+.bannerContainer {
+    margin-top: 5%;
+    width: auto;
+    background-color: #a4cbc4
+}
+
+.bannerText {
+    padding: 30px;
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+    font-size: 3rem;
+    color: #fff;
+}
+
+/* THE PATHWAY INTO REPRO */
+.RPHubGraphicImage {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1145px;
+}
+
+/* CAREERS */
+.careersContainer {
+    /*
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    */
+    display: flex;
+    padding-left: 5%;
+  }
+
+.careersCardsCardStudent {
+    width: 30%;
+    text-align: center;
+    float: left;
+    padding-left: 5%;
+}
+
+.careersCardsCardProfessional {
+    width: 30%;
+    text-align: center;
+    float: left;
+    padding-left: 5%;
+}
+
+.careersCardsCardSupporter {
+    width: 30%;
+    text-align: center;
+    float: left;
+    padding-left: 5%;
+}
+
+.h2Careers {
+    font-size: 3.0rem;
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+    color: rgba(140,135,191);
+    font-weight: bold;
+    padding: 50px;
+}
+
+
+.h3Careers {
+    font-size: 1.5vw;
+    color: #fff;
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.h4Careers {
+    text-align: center;
+}
+
+.careersCardsCardFooter {
+    width: 100%;
+    padding: 0;
+}
+
+.careersCardsCardContent {
+    overflow: auto;
+    min-height: 270px;
+}
+
+.careersCardsCardCardText {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 5px;
+}
+
+.careersCardsCardCardUL {  
+    text-align: left;
+    padding-right: 15px;
+}
+
+/* CONTACT */
+.contactContainer {
+    display: flex;
+    padding-top: 100px;
+    width: 60%;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+
+.shortContact {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    min-height: 400px;
+}
+
+.h2Contact {
+    font-size: 3.5rem;
+    width: max-content;
+    font-family: "Quicksand", sans-serif;
+    color: rgba(140,135,191);
+    font-weight: bold;
+}
+
+.spanContact {
+    margin-left:10px;
+    color: rgba(140,135,191);
+    transition: 0.2s;
+}
+
+.spanContactA {
+    text-decoration: none;
+}
+
+.spanContact:hover {
+    font-weight: bolder;
+ }
+
+.contactFormContainer {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 10%;
+}
+
+.contactFormContainerForm {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.contactInputSubmit {
+    background-color: #8c87bf;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contactInputSubmit:hover {
+    background-color: #A39DDF;
+}
+
+.contactInputText {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+/* FOOTER */
+.span {
+    color: rgb(190, 217, 243);
+}
+
+@media screen and (max-width: 1000px) {
+
+    /* NAVIGATION */
+    .header2 {
+        background-color: #ffffff;
+    }
+    
+    .header2Container {
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .header2ImageContainer {
+        float: center;
+        text-align: center;
+        padding-left: 0%;
+        padding-top: 5px;
+    }
+    
+    .header2Image { /* Style the image*/
+        max-height: none;
+        width: 100%;
+    }
+    
+    .header2MobileButton {
+        display: none;
+    }
+
+    .header2Right { /* Float the link section to the right */
+        display: flex;
+        padding-right: 3px;
+    }
+    
+    .header2RightLinks { /* Style the header links */
+        margin-top: 1%;
+        float: center;
+        color: black;
+        text-align: center;
+        padding: 12px;
+        text-decoration: none;
+        font-size: 17px;
+        line-height: 25px;
+        border-radius: 4px; 
+    }
+
+    .header2RightLinksActive { /* Style the active header link */
+        margin-top: 1%;
+        float: center;
+        color: black;
+        text-align: center;
+        padding: 12px;
+        text-decoration: none;
+        font-size: 17px;
+        line-height: 25px;
+        border-radius: 4px; 
+        background-color:#b6e1da
+    }
+    
+    /* ARROW */
+    .arrowContainer {
+        display: flex;
+        justify-content: center;
+        padding-top: 1%;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 2%;
+    }
+
+    .arrowButton {
+        text-decoration: none;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        background-color: white; 
+        border: 4px solid #f69478;
+        color: #f69478;
+        padding-left: 15%;
+        padding-right: 15%;
+        text-align: center;
+        /*font-size: 3.5rem;*/
+        font-size: 3.5vw;
+    }
+
+    .arrowButton:hover {
+        background-color: #f69478;
+        color: white;
+        padding-left: 17%;
+        padding-right: 17%;
+        padding-top: 0.5%;
+        padding-bottom: 0.5%;
+    }
+
+    .arrowButtonText {
+        font-family: "Quicksand", sans-serif;
+        /* font-size: 3.5rem; */
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    /* MISSION BANNER */
+    .missionBannerContainer {
+        width: 340px;
+        margin-bottom: 1%;
+        margin-left: 7%;
+    }
+
+    .h3Mission {
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 1%;
+        padding-bottom: 5%;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 15px;
+    }
+    
+    /* ABOUT/VISION */
+    .h2AboutVision {
+        font-size: 2.5rem;
+        text-align: center;
+        font-family: "Quicksand", sans-serif;
+        color: rgba(140,135,191);
+        font-weight: bold;
+    }
+
+    .aboutVisionContainer {
+        display: grid;
+    }
+
+    .aboutContainer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+    }
+    
+    .visionContainer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .aboutVisionText {
+        text-align: justify;
+        font-size: 3.5vw;
+    }
+
+    /* BANNERS */
+    .bannerContainer {
+        margin-top: 5%;
+        width: auto;
+        background-color: #a4cbc4
+    }
+
+    .bannerText {
+        padding: 30px;
+        text-align: center;
+        font-family: "Quicksand", sans-serif;
+        font-size: 2.2rem;
+        color: #fff;
+        font-weight: bold;
+    }
+
+    /* CAREERS */
+    .careersContainer {
+        display: grid;
+        padding: 5%;
+    }
+
+    .careersCardsCardStudent {
+        width: 100%;
+        text-align: center;
+        float: center;
+        padding-left: 0%;
+        padding-bottom: 5%;
+    }
+    
+    .careersCardsCardProfessional {
+        width: 100%;
+        text-align: center;
+        float: center;
+        padding-left: 0%;
+        padding-bottom: 5%;
+    }
+    
+    .careersCardsCardSupporter {
+        width: 100%;
+        text-align: center;
+        float: center;
+        padding-left: 0%;
+        padding-bottom: 5%;
+    }
+    
+    .h2Careers {
+        font-size: 2.5rem;
+        text-align: center;
+        font-family: "Quicksand", sans-serif;
+        color: rgba(140,135,191);
+        font-weight: bold;
+        padding: 25px;
+    }
+    
+    
+    .h3Careers {
+        font-size: 1.3rem;
+        color: #fff;
+        font-family: "Quicksand", sans-serif;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    .h4Careers {
+        text-align: center;
+    }
+    
+    .careersCardsCardFooter {
+        width: 100%;
+        padding: 0;
+    }
+    
+    .careersCardsCardContent {
+        overflow: auto;
+        min-height: auto;
+    }
+    
+    .careersCardsCardCardText {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 25px;
+    }
+    
+    .careersCardsCardCardUL {  
+        text-align: left;
+        padding-right: 15px;
+    }
+
+    /* CONTACT */
+    .contactContainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 50px;
+        width: 100%;
+        margin: 0 auto;
+        padding-bottom: 100px;
+    }
+
+    .shortContact {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        min-height: 300px;
+    }
+
+    .h2Contact {
+        font-size: 3.5rem;
+        width: max-content;
+        font-family: "Quicksand", sans-serif;
+        color: rgba(140,135,191);
+        font-weight: bold;
+    }
+
+    .spanContact {
+        margin-left:10px;
+        color: rgba(140,135,191);
+        transition: 0.2s;
+    }
+
+    .spanContactA {
+        text-decoration: none;
+    }
+
+    .spanContact:hover {
+        font-weight: bolder;
+    }
+
+    .contactFormContainer {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        margin: 0 auto;
+        padding: 5%;
+    }
+
+    .contactFormContainerForm {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .contactInputSubmit {
+        background-color: #8c87bf;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .contactInputSubmit:hover {
+        background-color: #A39DDF;
+    }
+
+    .contactInputText {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+    }
+
 }
