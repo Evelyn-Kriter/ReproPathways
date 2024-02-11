@@ -81,7 +81,7 @@ export default function About({}) {
               In my downtime, I love exploring various parts of the LA area.
               From trying new dessert shops with friends or adventuring to
               dog-friendly beaches, there is always something to do in the warm
-              weather. I’m also an avid reader, and you'll often find me
+              weather. I’m also an avid reader, and you will often find me
               engrossed in a good romance book during weekends.
             </p>
             <p>
