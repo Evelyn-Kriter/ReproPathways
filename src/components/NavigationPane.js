@@ -2,10 +2,10 @@ import Image from "next/image";
 import OfficialLogo from "../images/OfficialLogo.jpg";
 import styles from "../styles/index.module.css";
 import PropTypes from "prop-types";
-//import { useRouter } from "next/router";
+import { useRouter } from "next/router";
 
 export default function NavigationPane({ active }) {
-  //const router = useRouter();
+  const router = useRouter();
 
   //variables to represent styles for inactive links
   let currentHome = styles.header2RightLinks;
@@ -28,9 +28,15 @@ export default function NavigationPane({ active }) {
   }
 
   //router pushing
-  /*   function handleAboutClick() {
+  function handleSpotlightsClick() {
+    router.push("/spotlights");
+  }
+  function handleExploreClick() {
+    router.push("/explore");
+  }
+  function handleAboutClick() {
     router.push("/about");
-  } */
+  }
 
   return (
     <div className={styles.body}>
@@ -55,8 +61,8 @@ export default function NavigationPane({ active }) {
             {/* ABOUT LINK */}
             <a
               className={currentAbout}
-              href="./about"
-              //onClick="toggleMobileNavigation()"
+              //href="./about"
+              onClick={handleAboutClick}
             >
               About Us
             </a>
@@ -65,7 +71,7 @@ export default function NavigationPane({ active }) {
             <a
               className={styles.header2RightLinks}
               href="./#goals"
-              //onClick="toggleMobileNavigation()"
+              //onClick={handleVisionClick}
             >
               Vision
             </a>
@@ -73,8 +79,8 @@ export default function NavigationPane({ active }) {
             {/* EXPLORE */}
             <a
               className={currentExplore}
-              href="./explore"
-              //onClick="toggleMobileNavigation()"
+              //href="./explore"
+              onClick={handleExploreClick}
             >
               Explore
             </a>
@@ -82,8 +88,8 @@ export default function NavigationPane({ active }) {
             {/* SPOTLIGHTS */}
             <a
               className={currentSpotlight}
-              href="./spotlights"
-              //onClick="toggleMobileNavigation()"
+              //href="./spotlights"
+              onClick={handleSpotlightsClick}
             >
               Spotlights
             </a>

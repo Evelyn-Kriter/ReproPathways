@@ -1,4 +1,4 @@
-/* SPOTLIGHT PAGE STYLES */
+/* SPOTLIGHT AND EXPLORE PAGE STYLES */
 
 
 .html {
@@ -15,82 +15,87 @@
   max-width: 1250px;
 }
 
-.container {
-  /*min-height: 108vh;*/
-  margin-top: 70px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 
 .title1 {
   /*color: rgb(15, 11, 13);*/
   font-family: "Quicksand", sans-serif;
-  font-size: 2.5em;
+  font-size: 2.5rem;
   text-align: center;
+  text-wrap: wrap;
 }
 
 .title2 {
   color: rgb(255, 255, 255);
   font-family: "Quicksand", sans-serif;
-  font-size: 2.5em;
+  font-size: 2.5rem;
   text-align: center;
+  text-wrap: wrap;
 }
 
 .text1 {
   /*color: rgb(15, 11, 13);*/
   color: rgb(0, 0, 0);
   font-family: "Quicksand", sans-serif;
-  font-size: 1.8em;
+  font-size: 1.8rem;
   text-align: center;
+  text-wrap: wrap;
 }
 
 .text2 {
   /*color: rgb(15, 11, 13);*/
   color: rgb(255, 255, 255);
   font-family: "Quicksand", sans-serif;
-  font-size: 1.8em;
+  font-size: 1.8rem;
   text-align: center;
+  text-wrap: wrap;
 }
 
-.box1 {
-  margin-top: 6%;
-  background-color: #feb6c1;
-  min-height: 10vh;
-  /*padding: 0 1.0rem;*/
-  padding: 10%;
-  margin-left: 5%;
-  margin-right: 5%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.box2 {
-  margin-top: 2.5%;
-  margin-left: 5%;
-  margin-right: 5%;
-  background-color: #1b3a5d;
-  min-height: 10vh;
-  /*padding: 0 1.0rem;*/
-  padding: 10%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.box3 {
-  margin-top: 2.5%;
-  margin-left: 5%;
-  margin-right: 5%;
-  background-color: #fefaf6;
-  min-height: 10vh;
-  /*padding: 0 1.0rem;*/
-  padding: 10%;
+.boxContainer {
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+.box1 {
+  margin-top: 3%;
+  background-color: #feb6c1;
+  /*padding: 0 1.0rem;*/
+  padding: 5%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  flex-basis: 100%;
+  float: left;
+  /*display: flex;*/
+  /*flex-direction: row;*/
+}
+
+.box2 {
+  margin-top: 3%;
+  background-color: #1b3a5d;
+  /*padding: 0 1.0rem;*/
+  padding: 5%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  flex-basis: 100%;
+  float: right;
+}
+
+
+.qualtricsButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.8rem;
+  text-align: center;
+  border: #fefaf6;
+  border-style:groove;
+  font-weight: bold;
+}
+
+.qualtricsButton a:hover { /* Change the background color on mouse-over */
+  font-size: 2.5rem;
 }
 
 .footer {
@@ -106,4 +111,14 @@
 .footertext {
   color: rgb(255, 255, 255);
   text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .boxContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
 }
