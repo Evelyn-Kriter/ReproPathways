@@ -73,7 +73,7 @@ export default function HomePage({}) {
         ReproPathways is a community-centered, dynamic resource hub that
         promotes early engagement in- career exploration, effective mentorship,
         and personal growth. Our initiative strives to increase representation
-        in the many career possibilities offered by the fields of reproduction.
+        in the many career possibilities offered by the field of reproduction.
       </h3>
 
       {/* REPROPATHWAYS ROADMAP */}
@@ -95,28 +95,28 @@ export default function HomePage({}) {
             rewarding careers, particularly in an area as vital and impactful as
             reproduction. We understand the immense importance of this field and
             recognize that it requires a diverse and dedicated workforce to
-            address the various challenges and advancements. With a commitment
-            to creating an inclusive and supportive community, we strive to
+            address the various challenges and advancements. Through the
+            creation of an inclusive and supportive community, we strive to
             bridge the gap between aspiring individuals and the opportunities
-            available in reproductive careers. Through various initiatives,
-            resources, mentorship programs, and networking events, we aim to
-            equip aspiring professionals with the knowledge, skills, and
-            connections necessary to thrive in this evolving landscape. Whether
-            you are a student looking to explore career options or a
-            professional seeking to make a meaningful impact, we warmly welcome
-            you to join our growing community.
+            available in reproductive careers. Our various initiatives,
+            resources, mentorship programs, and networking events will aim to
+            equip students with the knowledge, skills, and connections necessary
+            to thrive in this evolving landscape. Whether you are a student
+            looking to explore career options or a professional seeking to make
+            a meaningful impact, we warmly welcome you to join our growing
+            community.
           </p>
         </div>
         <div className={styles.visionContainer}>
           <h2 className={styles.h2AboutVision}>Our Vision</h2>
           <p className={styles.aboutVisionText}>
-            At ReproPathways, we are committed to fostering a more inclusive and
-            diverse reproductive workforce through the creation dynamic resource
-            hub that champions effective mentorship and accessible career
-            exploration. Our mission is to revolutionize the reproductive field
-            by empowering individuals from all backgrounds to pursue and excel
-            in wide range of roles within the sector.
-            <br /> We recognize the critical importance of ensuring equal
+            At ReproPathways, we are committed to fostering an inclusive and
+            diverse reproductive workforce through the creation of a dynamic
+            resource hub that champions early engagement, effective mentorship,
+            and accessible career exploration. Our mission is to revolutionize
+            the reproductive field by empowering individuals from all
+            backgrounds to pursue and excel in the wide range of roles within
+            the sector. We recognize the critical importance of ensuring equal
             opportunities and representation within the reproductive workforce,
             and we also believe in the need to inspire students to pursue
             careers they might have never known were possible. Our initiative

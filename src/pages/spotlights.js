@@ -26,14 +26,17 @@ export default function Spotlights({}) {
         <div className={styles.box1}>
           <h1 className={styles.title1}>Spotlights coming soon!</h1>
           <b className={styles.text1}>
-            Come visit this page again soon for a deeper look into the lives of
-            Repro Professionals!
+            Visit this page again for a deep look into the lives of
+            professionals in the field of reproduction.
           </b>
         </div>
         <div className={styles.box2}>
           <h1 className={styles.title2}>Be a part of the change!</h1>
           <b className={styles.text2}>
-            We invite you to participate in our official survey
+            If you’re a professional, we invite you to participate in our
+            survey. Your responses will help us provide accurate job information
+            and spark curiosity among undergraduates exploring a path in the
+            wide range of possible careers in reproduction.
           </b>
           <br />
           <br />

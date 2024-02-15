@@ -190,12 +190,13 @@ export default function About({}) {
               fish at the bottom of a lake.
             </p>
             <p>
-              <b>What initially drew me to the initiative:</b> <br />
-              by the ReproPathways mission and the chance to combine my passions
-              for global health and marketing. As an African American and Queer
-              woman who studies biology and environmental studies, I am all too
-              familiar with healthcare disparities and barriers to entry in
-              fields that lack diversity but painfully need it!
+              <b>What initially drew me to the initiative:</b> <br />I was
+              inspired by the ReproPathways mission and the chance to combine my
+              passions my passions for global health and marketing. As an
+              African American and Queer woman who studies biology and
+              environmental studies, I am all too familiar with healthcare
+              disparities and barriers to entry in fields that lack diversity
+              but painfully need it!
             </p>
           </div>
         </div>

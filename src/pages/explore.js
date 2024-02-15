@@ -24,16 +24,18 @@ export default function Explore({}) {
       {/* Explore */}
       <div className={styles.boxContainer}>
         <div className={styles.box1}>
-          <h1 className={styles.title1}>Explore Content Coming Soon!</h1>
+          <h1 className={styles.title1}>Explore content coming soon!</h1>
           <b className={styles.text1}>
-            Come visit this page again soon for more information about Careers
-            in Reproduction!
+            Visit this page again for information on careers in reproduction
           </b>
         </div>
         <div className={styles.box2}>
           <h1 className={styles.title2}>Be a part of the change!</h1>
           <b className={styles.text2}>
-            We invite you to participate in our official survey
+            If you’re a professional, we invite you to participate in our
+            survey.  Your responses will help us provide accurate job
+            information and spark curiosity among undergraduates exploring a
+            path in the wide range of possible careers in reproduction.
           </b>
           <br />
           <br />
