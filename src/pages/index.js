@@ -36,9 +36,13 @@ export default function HomePage({}) {
   return (
     <div className={styles.body}>
       <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta charSet="UTF-8" />
         <title>ReproPathways</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+          name="description"
+          content="ReproPathways is a community-centered, dynamic resource hub that promotes early engagement in- career exploration, effective mentorship, and personal growth. Our initiative strives to increase representation in the many career possibilities offered by the field of reproduction."
+        />
+        <meta charSet="UTF-8" />
       </Head>
 
       {/* USER HEADER */}
