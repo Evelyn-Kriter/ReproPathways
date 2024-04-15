@@ -60,14 +60,15 @@ export default function Contact({}) {
               <p>
                 By submitting this form, you agree to our{" "}
                 <a href="privacy-policy.html" target="_blank">
-                  privacy policy
+                  privacy policy.
                 </a>
               </p>
               <br />
               <input
                 //className="w3-metro-blue"
-                type="submit"
+                type="button"
                 value="Submit"
+                id="submit"
                 className={styles.contactInputSubmit}
                 //className={`w3-metro-blue${styles.contactInputSubmit}`}
               />
